@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Table</title>
+    <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body>
+    <main>
+        
+      <section id="crypto-section" class="container center-align">
+        <div style="margin: 15px;">
+          <div  style="float: left;">
+            <p class="a">Show</p>
+            <select id="leave" onchange="pageRowChange()">
+              <option value="5" selected = "selected">5</option>
+              <option value="10">10</option>
+            </select>
+            <p class="a">entries</p>
+          </div>
+            <div style="float: right;">
+              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+            </div>
+        </div>          
+        <div style="clear: both;"></div>
+
+          <table id="myTable" class="table-sortable highlight centered">
+                <thead id="tableHead">
+                  <tr>
+                    <th>Rank <i class="caret"></i></th>
+                    <th>Name<i class="caret"></i></th>
+                    <th>Age<i class="caret"></i></th>
+                    <th>Occupation<i class="caret"></i></th>
+                </tr>
+                </thead>
+                
+                <tbody id="tableData">
+                  
+                </tbody>
+                  
+          </table>
+
+          <div id='infoRow' class="infoRow"></div>
+
+          <div id='buttons'></div>
+
+        </section>
+
+
+    </main>
+   
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/pagination.js"></script>
+    <script src="js/tablesort.js"></script>
+    <script src="js/searchFilter.js"></script>
+
+</body>
+</html>
